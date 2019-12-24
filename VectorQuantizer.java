@@ -9,6 +9,14 @@ class VectorQuantizer{
             this.m = m;
             this.data = new double[n][m];
         }
+        void print(){
+            for(int i = 0; i < this.n; ++i){
+                for(int j = 0; j < this.n; ++j){
+                    System.out.print(this.data[n][m] + " ");
+                }
+                System.out.print("\n");
+            }
+        }
     }
 
     public static Matrix getAverageMatrix(Matrix[] matricies){
