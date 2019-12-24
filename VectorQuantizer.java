@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.io.Serializable;
 
 class VectorQuantizer{
-    static class Matrix{
+    static class Matrix implements Serializable{
+        private static final long serialVersionUID = 1L;
         public double[][] data;
         int rows, cols;
         Matrix(int rows, int cols){
@@ -39,7 +41,8 @@ class VectorQuantizer{
         }
     }
 
-    static class QuantizedData{
+    static class QuantizedData implements Serializable{
+        private static final long serialVersionUID = 1L;
         Matrix[] codebook;
         int[][] data;
     }
