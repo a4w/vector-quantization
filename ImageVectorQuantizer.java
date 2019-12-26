@@ -1,3 +1,13 @@
+import java.awt.image.BufferedImage;
+import java.awt.Color;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import javax.imageio.ImageIO;
+
 class ImageVectorQuantizer{
 
     static void restoreImage(String inputDat, String outputImage) throws IOException, ClassNotFoundException{
